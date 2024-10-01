@@ -1,0 +1,33 @@
+United States: 2629.56
+Canada: 4801.81
+United Kingdom: 2427.31
+Europe: 2537.86
+Russia: 2358.86
+Saudi Arabia: 2630.73
+United Arab Emirates: 2631.72
+India: 2640.48
+Indonesia: 2583.86
+South Korea: 2670.15
+China: 2537.0
+Brazil: 2923.98
+Turkey: 3322.44
+Kuwait: 2588.58
+Iran: 2635.35
+Algeria: 2579.15
+Australia: 2375.06
+Bahrain: 2608.1
+Egypt: 4140.06
+Ghana: 3440.53
+Iraq: 2360.9
+Jordan: 2624.74
+Lebanon: 6200.66
+Libya: 2630.41
+Mexico: 2966.19
+Morocco: 2405.13
+Oman: 2595.51
+Pakistan: 2630.27
+Qatar: 2634.05
+Singapore: 2492.14
+South Africa: 2380.85
+Uzbekistan: 3005.72
+Yemen: 2632.97

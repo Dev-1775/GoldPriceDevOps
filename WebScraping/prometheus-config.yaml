@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: prometheus-config
+data:
+  prometheus.yml: |
+    global:
+      scrape_interval: 30s  # Set a shorter interval for testing
+      evaluation_interval: 200s
+
+    scrape_configs:
+      # Scrape Prometheus' own metrics
+      - job_name: 'prometheus'
+        static_configs:
+          - targets: ['localhost:9090']
+
+      # Scrape the currency-conversion-app custom exporter
+      - job_name: 'currency_prices'
+        static_configs:
+          - targets: ['currency-conversion-app:5000']  # Ensure this matches your service name

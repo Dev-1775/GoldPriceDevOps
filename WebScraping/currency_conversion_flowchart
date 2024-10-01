@@ -1,0 +1,30 @@
+// Currency Conversion Application Flowchart
+digraph {
+	A [label=Start]
+	B [label="Web Scraping Module
+(Python, BeautifulSoup, regex)
+Scrape currency rates & gold prices"]
+	C [label="Docker Containerization
+(Dockerfile, Python Base Image)
+Manage dependencies (requirements.txt)"]
+	D [label="Kubernetes Orchestration
+(Minikube, Pods)
+Run conversion script"]
+	E [label="Data Management
+(Docker Volume)
+Persist & Append Currency Data"]
+	F [label="Monitoring with Prometheus
+(Metrics on port 8000)
+Prometheus.yaml configuration"]
+	G [label="Grafana Visualization
+(Dashboards)
+Track Currency & Gold Price Trends"]
+	H [label=End]
+	A -> B
+	B -> C
+	C -> D
+	D -> E
+	E -> F
+	F -> G
+	G -> H
+}

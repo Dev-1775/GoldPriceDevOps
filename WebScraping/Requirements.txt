@@ -1,0 +1,4 @@
+requests
+beautifulsoup4
+lxml
+Flask==2.3.0

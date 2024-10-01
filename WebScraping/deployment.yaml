@@ -1,0 +1,38 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: currency-conversion-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: currency-conversion-app
+  template:
+    metadata:
+      labels:
+        app: currency-conversion-app
+    spec:
+      containers:
+      - name: currency-conversion-app
+        image: devdocker009/currency-conversion-app
+        ports:
+        - containerPort: 5000
+        volumeMounts:
+        - name: data-volume
+          mountPath: /data
+      volumes:
+      - name: data-volume
+        emptyDir: {}  # Or use a persistent volume claim
+---
+kind: Service
+apiVersion: v1
+metadata:
+  name: currency-conversion-app
+spec:
+  selector:
+    app: currency-conversion-app
+  ports:
+  - protocol: TCP
+    port: 5000
+    targetPort: 5000
+  type: ClusterIP
